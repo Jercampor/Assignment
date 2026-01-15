@@ -7,27 +7,65 @@
     <link rel="stylesheet" href="styles.css">   
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link active" href="gallery.html">Gallery</a>
-          <a class="nav-link active" href="contact.html">Contact</a>
+
+
+<nav class="navbar navbar-expand-lg custom-navbar" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Factions
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="terminids.html">Terminids</a></li>
+            <li><a class="dropdown-item" href="automatons.html">Automatons</a></li>
+            <li><a class="dropdown-item" href="illuminate.html">Illuminate</a></li>
+          </ul>
         </div>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Armours
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="light.html">Light</a></li>
+            <li><a class="dropdown-item" href="medium.html">Medium</a></li>
+            <li><a class="dropdown-item" href="heavy.html">Heavy</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Weapons
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="primaries.html">Primaries</a></li>
+            <li><a class="dropdown-item" href="secondaries.html">Secondaries</a></li>
+            <li><a class="dropdown-item" href="stratagems.html">Stratagems</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-link" href="">Favourites</a>
+        <a class="nav-link" href="">Quiz</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
       <div class="welcome-banner">
         <div class="welcome-banner-content">
           <h1>Welcome to the S.E.E.I.N.G program</h1>
           <p class="banner-text">Super Earth Enemy Identification & Neutralization Guide</p>
+          <button class="button2">See more</button>
         </div>
       </div>
 
