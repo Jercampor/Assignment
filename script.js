@@ -22,12 +22,10 @@ document.getElementById('enemySearch').addEventListener('keyup', function() {
     let reports = document.querySelectorAll('.enemy-report');
 
     reports.forEach(report => {
-       
-        let reportContent = report.querySelector('.enemy-details').textContent.toLowerCase();
-
+        let details = report.querySelector('.enemy-details');
         
-        if (nameElement) {
-            let nameText = nameElement.textContent.toLowerCase();
+        if (details) {
+            let reportContent = details.textContent.toLowerCase();
 
             if (reportContent.includes(filter)) {
                 report.style.display = "flex"; 
@@ -36,6 +34,21 @@ document.getElementById('enemySearch').addEventListener('keyup', function() {
             }
         }
     });
+
+    let visibleReports = document.querySelectorAll('.enemy-report[style*="display: flex"]');
+    let message = document.getElementById('noResults');
+
+    if (message) {
+        if (visibleReports.length === 0 && filter !== "") {
+            message.style.display = "block";     
+    } 
+    else {
+        message.style.display = "none";
+    }
+
+    }
 });
 
 /* thank GOD this works */
+
+//Bump up time wasted to 30 mins
