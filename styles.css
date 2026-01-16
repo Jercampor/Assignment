@@ -154,6 +154,21 @@ body {
 
 /* TERMINID FACTION STYLING --- END */
 
+.search-container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#enemySearch {
+    border-radius: 0;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#enemySearch::placeholder {
+    color: #ffb901;
+}
 
 
 /* ENEMY INTEL SECTION */
