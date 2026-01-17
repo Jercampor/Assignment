@@ -182,6 +182,28 @@ body {
 
 /* AUTOMATON FACTION STYLING --- END */
 
+
+/* ILLUMINATE FACTION STYLING */
+
+.illuminate-bg {
+    background-image: url('images/Metropolis_City_Night_Overview.webp');
+}
+
+.illuminate-bg .title-with-icon h1 {
+    color: #6b3aba;
+}
+.illuminate-bg p {
+    color: #ff4d4d;
+}
+
+.illuminate-bg .faction-icon {
+    height: 80px;        
+    width: auto;        
+    filter: drop-shadow(0 0 10px rgba(107, 58, 186, 1));
+}
+
+/* ILLUMINATE FACTION STYLING --- END */
+
 .search-container {
     max-width: 500px;
     margin: 20px auto;
