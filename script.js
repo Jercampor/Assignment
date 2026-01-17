@@ -35,7 +35,7 @@ document.getElementById('enemySearch').addEventListener('keyup', function() {
         }
     });
 
-    let visibleReports = document.querySelectorAll('.enemy-report[style*="display: flex"]');
+    let visibleReports = Array.from(reports).filter(report => report.style.display !== "none");
     let message = document.getElementById('noResults');
 
     if (message) {
