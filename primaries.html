@@ -19,7 +19,7 @@
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" aria-current="page" href="index.html">Home</a>
 
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +44,7 @@
         </div>
 
         <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Weapons
           </a>
           <ul class="dropdown-menu">
@@ -63,17 +63,74 @@
   </div>
 </nav>
 
-      <div class="welcome-banner">
-        <div class="welcome-banner-content">
-          <h1>Welcome to the S.E.E.I.N.G program</h1>
-          <p class="banner-text">Super Earth Enemy Identification & Neutralization Guide</p>
-          <button class="button2">See more</button>
+<header class="faction-header illuminate-bg">
+    <div class="faction-header-content">
+        <div class="title-with-icon">
+            <img src="images/Illuminate_Icon.webp" alt="Terminid Icon" class="faction-icon">
+            <h1>ILLUMINATE</h1>
         </div>
+        <p class="banner-text">!!Alien Threat Assessment!!</p>
+    </div>
+</header>
+
+<main class="intel-container">
+
+<div class = "search-container mb-4">
+    <input type="text" id="enemySearch" class="form-control bg-dark text-warning border-warning" placeholder="Search Intel Database (e.g.Charger)">
+</div>
+
+<div id="noResults" style="display: none;">
+    <h2>--- NOT INSIDE DATABASE ---</h2>
+    <p>Adjust search parameters or contact high command.</p>
+</div>
+
+    <div class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-4 weapon-card">
+            <div class="card bg-dark text-warning border-warning h-100">
+                <img src="images/1920px-AR-23_Liberator_Primary_Render.webp" class="card-img-top" alt="Liberator">
+                <div class="card-body">
+                    <h5 class="card-title">AR-23 Liberator</h5>
+                    <button class="btn btn-outline-warning trigger-modal trigger-tooltip" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="DMG: 60 | CAP: 45" 
+                    data-title="AR-23 Liberator" 
+                    data-img="images/1920px-AR-23_Liberator_Primary_Render.webp"
+                    data-desc="Standard issue rifle."
+                    data-stats="60 Damage, 45 ammo capacity, light penetration">
+                    SEE MORE
+                </button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</div>
+
+<div class="modal fade" id="weaponModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-warning">
+      <div class="modal-header border-bottom border-warning">
+        <h1 class="modal-title fs-5" id="modalTitle">WEAPON NAME</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" class="img-fluid mb-3" style="width: 100%; border: 1px solid #ffc107;">
+        <p id="modalStats" class="fw-bold text-warning"></p>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-<script src="script.js"></script>
+</main>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

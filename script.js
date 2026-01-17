@@ -1,54 +1,55 @@
-/* document.getElementById('enemySearch').addEventListener('keyup', function(){
-  
-    let filter = this.ariaValueMax.toLowerCase();
 
-    let reports = document.querySelectorAll('.enemy-report');
+let tooltips = document.querySelectorAll('.trigger-tooltip');
+tooltips.forEach(btn => new bootstrap.Tooltip(btn));
 
-    reports.forEach(report => {
+let modalElement = document.getElementById('weaponModal');
+if (modalElement) {
+    const myPopup = new bootstrap.Modal(modalElement);
+    let modalButtons = document.querySelectorAll('.trigger-modal');
 
-        let name = report.querySelector('.enemy-name').textContent.toLowerCase();
+    modalButtons.forEach(function(btn) {
+        btn.onclick = function() {
+            
+            document.getElementById('modalTitle').innerText = btn.getAttribute('data-title');
+            document.getElementById('modalImg').src = btn.getAttribute('data-img');
+            document.getElementById('modalDesc').innerText = btn.getAttribute('data-desc');
+            document.getElementById('modalStats').innerText = btn.getAttribute('data-stats');
 
-        if (name.includes(filter)) {
-            report.style.display = "flex";
-        }
-        else {
-            report.style.display = "none";
-        }
-    })
-}) */ // 20 mins wasted on this :D
+            myPopup.show(); 
+        };
+    });
+}
 
-document.getElementById('enemySearch').addEventListener('keyup', function() {
-    let filter = this.value.toLowerCase();
-    let reports = document.querySelectorAll('.enemy-report');
+let searchBar = document.getElementById('enemySearch');
+if (searchBar) {
+    searchBar.onkeyup = function() {
+        let userInput = searchBar.value.toLowerCase(); 
+        let allItems = document.querySelectorAll('.enemy-report, .weapon-card');
+        let visibleCount = 0; 
 
-    reports.forEach(report => {
-        let details = report.querySelector('.enemy-details');
+        allItems.forEach(function(item) {
+            let content = item.textContent.toLowerCase();
         
-        if (details) {
-            let reportContent = details.textContent.toLowerCase();
+            if (content.includes(userInput)) {
+                item.classList.remove('hidden');
+                visibleCount++;
+            } 
+            else {
+                item.classList.add('hidden');
+            }
+        });
 
-            if (reportContent.includes(filter)) {
-                report.style.display = "flex"; 
-            } else {
-                report.style.display = "none"; 
+        let noResultsMsg = document.getElementById('noResults');
+        if (noResultsMsg) {
+            if (userInput === "") {
+                noResultsMsg.style.display = "none";
+            } 
+            else if (visibleCount === 0) {
+                noResultsMsg.style.display = "block";
+            } 
+            else {
+                noResultsMsg.style.display = "none";
             }
         }
-    });
-
-    let visibleReports = Array.from(reports).filter(report => report.style.display !== "none");
-    let message = document.getElementById('noResults');
-
-    if (message) {
-        if (visibleReports.length === 0 && filter !== "") {
-            message.style.display = "block";     
-    } 
-    else {
-        message.style.display = "none";
-    }
-
-    }
-});
-
-/* thank GOD this works */
-
-//Bump up time wasted to 30 mins
+    }; 
+}

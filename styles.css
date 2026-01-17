@@ -1,3 +1,8 @@
+body {
+    background-color: #1a1a1a;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
 .welcome-banner {
     background-image: url('images/Flag_of_Super_Earth.webp');
     background-size: cover;
@@ -21,19 +26,21 @@
 }
 
 .navbar.custom-navbar {
-    background-color: #000000 !important;
+    background-color: #000000 ;
     border-bottom: 1px solid #FFEE00; 
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .navbar.custom-navbar .nav-link {
-    color: #FFEE00 !important;
-    font-weight: bold;
+    color: #FFEE00 ;
+    font-weight: 700;
     text-transform: uppercase; 
     transition: 0.3s;
+    letter-spacing: 1px;
 }
 
 .navbar.custom-navbar .nav-link:hover {
-    color: #ffffff !important;
+    color: #ffffff ;
     text-shadow: 0 0 10px #FFEE00;
 }
 
@@ -43,19 +50,19 @@
 }
 
 .dropdown-menu {
-    background-color: #000000 !important;
-    border: 1px solid #FFEE00 !important;
+    background-color: #000000 ;
+    border: 1px solid #FFEE00 ;
     border-radius: 8px;
     padding: 10px 0;
 }
 
 .dropdown-item {
-    color: #FFEE00 !important;
+    color: #FFEE00 ;
 }
 
 .dropdown-item:hover {
-    background-color: #FFEE00 !important;
-    color: #000000 !important;
+    background-color: #FFEE00 ;
+    color: #000000 ;
 }
 
 h1 {
@@ -93,10 +100,6 @@ p {
 
 .special-notice{
     color: #ff4d4d;
-}
-
-body {
-    background-color: #1a1a1a;
 }
 
 .button2 {
@@ -265,12 +268,14 @@ body {
 
 .enemy-details {
     flex: 1.5; 
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .enemy-name {
     text-align: left; 
     margin: 0;
     font-size: 2.2rem;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .yellow-divider {
@@ -284,6 +289,11 @@ body {
     background: #333030;
     padding: 15px;
     border-left: 5px solid #FFEE00;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.weakspot-box h3 {
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .weakspot-box ul li {
@@ -303,4 +313,28 @@ body {
     }
 }
 
+#noResults {
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 /* ENEMY INTEL SECTION--END */
+
+.hidden { display: none; }
+
+.tooltip-inner {
+    background-color: #000;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    font-family: 'Chakra Petch', sans-serif; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #ffc107;
+}
