@@ -207,7 +207,7 @@ p {
 
 /* ILLUMINATE FACTION STYLING --- END */
 
-/* PRIMARIES STYLING */
+/* PRIMARIES - SECONDARY - STRATAGEM STYLING */
 
 .primaries-bg {
     background-image: url('images/Automaton_Banner_Art_by_pro100ker.webp');
@@ -226,7 +226,28 @@ p {
     filter: drop-shadow(0 0 10px rgb(255, 255, 255));
 }
 
-/* PRIMARIES STYLING --- END */
+/* PRIMARIES - SECONDARY - STRATAGEM --- END */
+
+/* LIGHT - MEDIUM - HEAVY STYLING */
+
+.armour-bg {
+    background-image: url('images/wyyvaq5p6wkc1.jpeg');
+}
+
+.armour-bg .title-with-icon h1 {
+    color: #FFEE00;
+}
+.armour-bg p {
+    color: #FFEE00;
+}
+
+.armour-bg .faction-icon {
+    height: 80px;        
+    width: auto;        
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+/* LIGHT - MEDIUM - HEAVY STYLING --- END */
 
 .search-container {
     max-width: 500px;

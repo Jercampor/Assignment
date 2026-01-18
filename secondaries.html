@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,700&family=Sofia+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg custom-navbar" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Factions
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="terminids.html">Terminids</a></li>
+            <li><a class="dropdown-item" href="automatons.html">Automatons</a></li>
+            <li><a class="dropdown-item" href="illuminate.html">Illuminate</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Armours
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="light.html">Light</a></li>
+            <li><a class="dropdown-item" href="medium.html">Medium</a></li>
+            <li><a class="dropdown-item" href="heavy.html">Heavy</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Weapons
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="primaries.html">Primaries</a></li>
+            <li><a class="dropdown-item" href="secondaries.html">Secondaries</a></li>
+            <li><a class="dropdown-item" href="stratagems.html">Stratagems</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-link" href="">Favourites</a>
+        <a class="nav-link" href="">Quiz</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="faction-header primaries-bg">
+    <div class="faction-header-content">
+        <div class="title-with-icon">
+            <img src="images/primary icon.png" alt="Terminid Icon" class="faction-icon">
+            <h1>SECONDARY WEAPONS</h1>
+        </div>
+        <p class="banner-text">KNOW YOUR GUN HELLDIVER!!</p>
+    </div>
+</header>
+
+<main class="intel-container">
+
+<div class = "search-container mb-4">
+    <input type="text" id="enemySearch" class="form-control bg-dark text-warning border-warning" placeholder="Search Intel Database (e.g.Charger)">
+</div>
+
+<div id="noResults" style="display: none;">
+    <h2>--- NOT INSIDE DATABASE ---</h2>
+    <p>Adjust search parameters or contact high command.</p>
+</div>
+
+    <div class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-4 weapon-card">
+            <div class="card bg-dark text-warning border-warning h-100">
+                <img src="images/1920px-P-4_Senator_Secondary_Render.webp" class="card-img-top" alt="primary">
+                <div class="card-body">
+                    <h5 class="card-title">P-4 Senator</h5>
+                    <button class="btn btn-outline-warning trigger-modal trigger-tooltip" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="DMG: 225 | CAP: 6" 
+                    data-title="P-4 Senator" 
+                    data-img="images/1920px-P-4_Senator_Secondary_Render.webp"
+                    data-desc="The big iron."
+                    data-stats="225 Damage, 6 ammo capacity, heavy penetration">
+                    SEE MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 weapon-card">
+            <div class="card bg-dark text-warning border-warning h-100">
+                <img src="images/1920px-P-92_Warrant_Secondary_Render.webp" class="card-img-top" alt="primary">
+                <div class="card-body">
+                    <h5 class="card-title">P-92 Warrant</h5>
+                    <button class="btn btn-outline-warning trigger-modal trigger-tooltip" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="DMG: 80 | CAP: 13" 
+                    data-title="P-92 Warrant" 
+                    data-img="images/1920px-P-92_Warrant_Secondary_Render.webp"
+                    data-desc="Lock on capable sidearm."
+                    data-stats="80 Damage, 13 ammo capacity, medium penetration">
+                    SEE MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 weapon-card">
+            <div class="card bg-dark text-warning border-warning h-100">
+                <img src="images/600px-P-113_Verdict_Secondary_Render.webp" class="card-img-top" alt="primary">
+                <div class="card-body">
+                    <h5 class="card-title">P-113 Verdict</h5>
+                    <button class="btn btn-outline-warning trigger-modal trigger-tooltip" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="DMG: 140 BAL | CAP: 10" 
+                    data-title="P-113 Verdict" 
+                    data-img="images/600px-P-113_Verdict_Secondary_Render.webp"
+                    data-desc="Solid space deagle."
+                    data-stats="140 Damage, 10 ammo capacity, medium penetration">
+                    SEE MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 weapon-card">
+            <div class="card bg-dark text-warning border-warning h-100">
+                <img src="images/600px-CQC-2_Saber_Secondary_Render.webp" class="card-img-top" alt="primary">
+                <div class="card-body">
+                    <h5 class="card-title">CQC-2 Saber</h5>
+                    <button class="btn btn-outline-warning trigger-modal trigger-tooltip" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="DMG: 125 | MELEE" 
+                    data-title="CQC-2 Saber" 
+                    data-img="images/600px-CQC-2_Saber_Secondary_Render.webp"
+                    data-desc="Well rounded melee weapon, a super earth classic"
+                    data-stats="125 damage, medium penetration">
+                    SEE MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 weapon-card">
+            <div class="card bg-dark text-warning border-warning h-100">
+                <img src="images/GP-20_Ultimatum_Secondary_Render.webp" class="card-img-top" alt="primary">
+                <div class="card-body">
+                    <h5 class="card-title">GP-20 Ultimatum</h5>
+                    <button class="btn btn-outline-warning trigger-modal trigger-tooltip" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="DMG: 1000 Ballistic, 2000 explosive| CAP: 1" 
+                    data-title="GP-20 Ultimatum" 
+                    data-img="images/GP-20_Ultimatum_Secondary_Render.webp"
+                    data-desc="Nuke in your pocket."
+                    data-stats="1000 Ballistic damage, 2000 Explosive damage, 1 ammo capacity, Anti-Tank, can be wielded with one hand">
+                    SEE MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 weapon-card">
+            <div class="card bg-dark text-warning border-warning h-100">
+                <img src="images/600px-LAS-58_Talon_Secondary_Render.webp" class="card-img-top" alt="primary">
+                <div class="card-body">
+                    <h5 class="card-title">LAS-58 Talon</h5>
+                    <button class="btn btn-outline-warning trigger-modal trigger-tooltip" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="top"
+                    title="DMG: 200 | CAP: INFINITE" 
+                    data-title="LAS-58 Talon" 
+                    data-img="images/600px-LAS-58_Talon_Secondary_Render.webp"
+                    data-desc="Laser pistol."
+                    data-stats="200 damage, Infinite ammo capacity so long as cooled down, medium penetration">
+                    SEE MORE</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</div>
+
+<div class="modal fade" id="weaponModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border-warning">
+      <div class="modal-header border-bottom border-warning">
+        <h1 class="modal-title fs-5" id="modalTitle">WEAPON NAME</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" class="img-fluid mb-3" style="width: 100%; border: 1px solid #ffc107;">
+        <p id="modalStats" class="fw-bold text-warning"></p>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
