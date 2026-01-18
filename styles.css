@@ -291,6 +291,27 @@ p {
 
 /* CONTACT STYLING --- END */
 
+/* QUIZ STYLING */
+
+.quiz-bg {
+    background-image: url('images/my-super-earth-patriots-men-and-women-v0-8setboe4qgid1.webp');
+}
+
+.quiz-bg .title-with-icon h1 {
+    color: #FFEE00;
+}
+.quiz-bg p {
+    color: #FFEE00;
+}
+
+.quiz-bg .faction-icon {
+    height: 80px;        
+    width: auto;        
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+/* QUIZ STYLING --- END */
+
 .search-container {
     max-width: 500px;
     margin: 20px auto;
@@ -453,10 +474,6 @@ p {
     color:hwb(65 16% 0%);
 }
 
-body {
-    background-color: #333030;
-}
-
 .button2 {
     background-color: #000000;color: hwb(65 16% 0%);border: 2px solid hwb(65 16% 0%);
     padding: 10px 24px;
@@ -555,4 +572,53 @@ body {
   background-color: black; 
   color: hwb(65 16% 0%); 
   border: 1px solid hwb(65 16% 0%);
+}
+
+
+
+
+
+/* QUIZ QUESTIONS STYLING */
+
+.quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: black;
+    border: 2px solid #FFEE00;
+    padding: 30px;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.options label {
+    font-family: 'Sofia Sans', sans-serif;
+    color: #FFEE00;
+    cursor: pointer;
+}
+
+.quiz-actions button {
+    background-color: black;
+    color: hwb(65 16% 0%);
+    border: 1px solid hwb(65 16% 0%);
+    padding: 10px 24px;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.quiz-actions button:hover {
+    background-color: hwb(65 16% 0%);
+    color: black;
+    box-shadow: 0 0 15px hwb(65 16% 0%);
 }

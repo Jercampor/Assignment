@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,700&family=Sofia+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg custom-navbar" data-bs-theme="dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html">
+      <img src="images/Vector Smart Object.png" alt="Logo" width="46" height="40" class="d-inline-block align-middle">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Factions
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="terminids.html">Terminids</a></li>
+            <li><a class="dropdown-item" href="automatons.html">Automatons</a></li>
+            <li><a class="dropdown-item" href="illuminate.html">Illuminate</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Armours
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="light.html">Light</a></li>
+            <li><a class="dropdown-item" href="medium.html">Medium</a></li>
+            <li><a class="dropdown-item" href="heavy.html">Heavy</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Weapons
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="primaries.html">Primaries</a></li>
+            <li><a class="dropdown-item" href="secondaries.html">Secondaries</a></li>
+            <li><a class="dropdown-item" href="stratagems.html">Stratagems</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-link" href="favourites.html">Favourites</a>
+        <a class="nav-link active" href="quiz.html">Quiz</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="faction-header quiz-bg">
+    <div class="faction-header-content">
+        <div class="title-with-icon">
+            <img src="images/armour icon.png" alt="Terminid Icon" class="faction-icon">
+            <h1>SUPER QUIZ</h1>
+        </div>
+        <p class="banner-text">TEST YOUR LOYALTY DIVER!!</p>
+    </div>
+</header>
+
+<div class="quiz-container">
+    <h2 class="terminal-text text-center">CITIZENSHIP TEST</h2>
+    <form id="quizForm">
+        <div class="question-block">
+            <p>1. What is the primary goal of a Helldiver?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="correct"> Spreading Managed Democracy</label>
+                <label><input type="radio" name="q1" value="wrong"> Farming Carrots</label>
+                <label><input type="radio" name="q1" value="wrong"> Bird Watching</label>
+                <label><input type="radio" name="q1" value="wrong"> Negotiating with Bugs</label>
+            </div>
+        </div>
+
+        <div class="question-block">
+          <p>2. What is the size of a terminid Scavenger?</p>
+          <div class="options">
+              <label><input type="radio" name="q2" value="correct"> light</label>
+              <label><input type="radio" name="q2" value="wrong"> heavy</label>
+              <label><input type="radio" name="q2" value="wrong"> extreme</label>
+              <label><input type="radio" name="q2" value="wrong"> humongous</label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <p>3. What is the button input for the 500KG bomb?</p>
+          <div class="options">
+              <label><input type="radio" name="q3" value="correct"> ↑→↓↓↓ </label>
+              <label><input type="radio" name="q3" value="wrong"> ↑→←↓→ </label>
+              <label><input type="radio" name="q3" value="wrong"> ↑→→↓↑ </label>
+              <label><input type="radio" name="q3" value="wrong"> ↓→↓←← </label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <p>4. What is the armor rating of the CE-74 Breaker?</p>
+          <div class="options">
+              <label><input type="radio" name="q4" value="correct"> 50 </label>
+              <label><input type="radio" name="q4" value="wrong"> 60 </label>
+              <label><input type="radio" name="q4" value="wrong"> 100 </label>
+              <label><input type="radio" name="q4" value="wrong"> 40 </label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <p>5. What is the standard issue rifle of super earth?</p>
+          <div class="options">
+              <label><input type="radio" name="q5" value="correct"> AR-23 Liberator </label>
+              <label><input type="radio" name="q5" value="wrong"> SG-225 Breaker </label>
+              <label><input type="radio" name="q5" value="wrong"> R-36 Eruptor </label>
+              <label><input type="radio" name="q5" value="wrong"> R-2124 Constitution </label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <p>6. What is the highest value target on the terminind front?</p>
+          <div class="options">
+              <label><input type="radio" name="q6" value="correct"> Hive Lord </label>
+              <label><input type="radio" name="q6" value="wrong"> Stalker </label>
+              <label><input type="radio" name="q6" value="wrong"> Bile Titan </label>
+              <label><input type="radio" name="q6" value="wrong"> Charger </label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <p>7. Which illuminate unit has three long legs and fires a laser beam?</p>
+          <div class="options">
+              <label><input type="radio" name="q7" value="correct"> The Harvester </label>
+              <label><input type="radio" name="q7" value="wrong"> Fleshmob </label>
+              <label><input type="radio" name="q7" value="wrong"> Overseer </label>
+              <label><input type="radio" name="q7" value="wrong"> Voteless </label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <p>8. Which automaton unit can call in reinforcements?</p>
+          <div class="options">
+              <label><input type="radio" name="q8" value="correct"> Comissar </label>
+              <label><input type="radio" name="q8" value="wrong"> Trooper </label>
+              <label><input type="radio" name="q8" value="wrong"> Devastator </label>
+              <label><input type="radio" name="q8" value="wrong"> Berserker </label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <p>9. What is the most important planet? </p>
+          <div class="options">
+              <label><input type="radio" name="q9" value="correct"> Super Earth </label>
+              <label><input type="radio" name="q9" value="wrong"> Mars </label>
+              <label><input type="radio" name="q9" value="wrong"> Hellmire </label>
+              <label><input type="radio" name="q9" value="wrong"> New Stockholm </label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <p>10. What do the enemies of Super Earth Deserve? </p>
+          <div class="options">
+              <label><input type="radio" name="q10" value="correct"> Death </label>
+              <label><input type="radio" name="q10" value="wrong"> Re-education </label>
+              <label><input type="radio" name="q10" value="wrong"> Liberation </label>
+              <label><input type="radio" name="q10" value="wrong"> Freedom </label>
+          </div>
+        </div>
+
+        <div class="quiz-actions">
+          <button type="button" class="button2" onclick="calculateScore()">Submit</button>
+          <button type="reset" class="button2">Clear</button>
+        </div>
+    </form>
+    <div id="quizResult" class="mt-4 text-center"></div>
+</div>
+
+
+    </main>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

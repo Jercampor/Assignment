@@ -76,3 +76,35 @@ if (searchBar) {
 function mailTo(bodyText, subjectText) {
     window.location.href = "mailto:jlicp1006@gmail.com?subject=" + subjectText + "&body=" + bodyText;
 }
+
+
+
+function calculateScore() {
+    let score = 0;
+    const totalQuestions = 10;
+
+    for (let i = 1; i <= totalQuestions; i++) {
+        let questionName = `q${i}`;
+        let answer = document.querySelector(`input[name="${questionName}"]:checked`);
+        if (answer && answer.value === "correct") {
+            score++;
+        }
+    }
+
+    const resultDiv = document.getElementById('quizResult');
+    
+    resultDiv.innerHTML = `<h3>FINAL SCORE: ${score} / ${totalQuestions}</h3>`;
+    
+    if (score === totalQuestions) {
+        resultDiv.style.color = "#FFEE00";
+        resultDiv.innerHTML += "<p>EXCELLENT WORK, ELIGIBLE FOR C-01 FORM!</p>";
+    } 
+    else if (score >= 5) {
+        resultDiv.style.color = "#4CAF50";
+        resultDiv.innerHTML += "<p>PASSABLE. BACK TO THE FRONT LINES.</p>";
+    } 
+    else {
+        resultDiv.style.color = "#FF4D4D";
+        resultDiv.innerHTML += "<p>TREASONOUS LACK OF KNOWLEDGE DETECTED.</p>";
+    }
+}
