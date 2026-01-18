@@ -53,3 +53,26 @@ if (searchBar) {
         }
     }; 
 }
+
+
+  function validateForm(event) {
+    event.preventDefault(); 
+
+    const feedback = document.getElementById("feedback").value;
+    const contactNumber = document.getElementById("contactNumber").value;
+    const email = document.getElementById("inputEmail").value;
+    const fullName = document.getElementById("fullName").value;
+
+    if (fullName === "" || email === "" || contactNumber === "" || feedback === "") {
+        alert("Note: ALL inputs are Mandatory, please amend your entries and try again.");
+    } 
+    else {
+        alert("Form submitted successfully! Opening your email client...");
+        
+        mailTo(feedback, contactNumber); 
+    }
+}
+
+function mailTo(bodyText, subjectText) {
+    window.location.href = "mailto:jlicp1006@gmail.com?subject=" + subjectText + "&body=" + bodyText;
+}

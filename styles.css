@@ -249,6 +249,48 @@ p {
 
 /* LIGHT - MEDIUM - HEAVY STYLING --- END */
 
+/* FAVOURITES STYLING */
+
+.favourites-bg {
+    background-image: url('images/400px-Superearth1.webp');
+}
+
+.favourites-bg .title-with-icon h1 {
+    color: #FFEE00;
+}
+.favourites-bg p {
+    color: #FFEE00;
+}
+
+.favourites-bg .faction-icon {
+    height: 80px;        
+    width: auto;        
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+/* FAVOURITES STYLING --- END */
+
+/* CONTACT STYLING */
+
+.contact-bg {
+    background-image: url('images/anybody-else-feel-super-earth-could-the-next-time-be-a-bit-v0-0hd3wqq769jf1.jpg');
+}
+
+.contact-bg .title-with-icon h1 {
+    color: #FFEE00;
+}
+.contact-bg p {
+    color: #FFEE00;
+}
+
+.contact-bg .faction-icon {
+    height: 80px;        
+    width: auto;        
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+/* CONTACT STYLING --- END */
+
 .search-container {
     max-width: 500px;
     margin: 20px auto;
@@ -379,4 +421,138 @@ p {
 
 .bs-tooltip-top .tooltip-arrow::before {
     border-top-color: #ffc107;
+}
+
+
+
+/* CONTACT FORM */
+
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+.banner-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+.aboutus {
+	padding:50px 0px;   
+}
+
+h2 {
+    text-align:center;
+	color: hwb(65 16% 0%);
+	font-size: 40px;
+
+}
+
+p {
+    color:hwb(65 16% 0%);
+}
+
+body {
+    background-color: #333030;
+}
+
+.button2 {
+    background-color: #000000;color: hwb(65 16% 0%);border: 2px solid hwb(65 16% 0%);
+    padding: 10px 24px;
+    border-radius: 12px; 
+}
+
+#aboutimg {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+#message {
+  color: yellow;
+  background-color: #333;
+  padding: 15px;
+  margin-top: 20px;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  text-align: center;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; 
+    padding: 20px;
+}
+.contact-form {
+    background-color: black;
+    color: yellow;
+    width: 700px; 
+    border: 2px solid yellow;
+    border-radius: 8px;
+    padding: 40px; 
+}
+.contact-form input{
+  border: 1px solid yellow;
+}
+.contact-form textarea {
+  background-color: hsl(0, 0%, 100%);
+  color: rgb(0, 0, 0);
+  border: 1px solid yellow;
+}
+.error-message {
+  color: yellow;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.contact-form .form-check-label {
+  color: yellow;
+}
+.contact-form button {
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+    padding: 15px; 
+    font-size: 1.3rem;
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+}
+.contact-form button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/*
+
+.dragRaceFormContainer {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 90%; 
+  max-width: 800px; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+#dragRaceForm {
+  background-color: black;
+  color: hwb(65 16% 0%);
+  padding: 40px;
+  border-radius: 8px; 
+  box-sizing: border-box; 
+  width: 100%; 
+}
+
+*/
+
+.btn {
+  background-color: black; 
+  color: hwb(65 16% 0%); 
+  border: 1px solid hwb(65 16% 0%);
 }
