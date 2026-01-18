@@ -207,6 +207,27 @@ p {
 
 /* ILLUMINATE FACTION STYLING --- END */
 
+/* PRIMARIES STYLING */
+
+.primaries-bg {
+    background-image: url('images/Automaton_Banner_Art_by_pro100ker.webp');
+}
+
+.primaries-bg .title-with-icon h1 {
+    color: #FFEE00;
+}
+.primaries-bg p {
+    color: #FFEE00;
+}
+
+.primaries-bg .faction-icon {
+    height: 80px;        
+    width: auto;        
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+/* PRIMARIES STYLING --- END */
+
 .search-container {
     max-width: 500px;
     margin: 20px auto;
