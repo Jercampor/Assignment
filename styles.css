@@ -449,19 +449,10 @@ p {
 /* CONTACT FORM */
 
 
-h1 {
+.form-container h1 {
     font-size: 2.5rem;
     margin: 0;
   }
-
-.banner-text {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-  
-.aboutus {
-	padding:50px 0px;   
-}
 
 .form-container h2 {
     text-align:center;
@@ -474,7 +465,7 @@ p {
     color:hwb(65 16% 0%);
 }
 
-.button2 {
+.form-container .button2 {
     background-color: #000000;color: hwb(65 16% 0%);border: 2px solid hwb(65 16% 0%);
     padding: 10px 24px;
     border-radius: 12px; 
@@ -567,14 +558,6 @@ p {
 }
 
 */
-
-.btn {
-  background-color: black; 
-  color: hwb(65 16% 0%); 
-  border: 1px solid hwb(65 16% 0%);
-}
-
-
 
 
 
